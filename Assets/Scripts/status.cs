@@ -9,7 +9,7 @@ public class status : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _health = 10f;
+        _health = 5f;
         _maxHealth = 10f;
     }
 
