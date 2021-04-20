@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2065728243222930212, guid: b31b430dddd5b324b91c5d43379bf705, type: 3}
-  waves: 3
-  enemiesPerSpawner: 3
+  enemiesPerWave: 04000000080000000c000000
+  enemyPrefabName: TestEnemy(Clone)
 --- !u!1 &244282328
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7352532372410604851, guid: a4f36796795cc2e47b8cd2e7bfde533e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7354008472163809815, guid: a4f36796795cc2e47b8cd2e7bfde533e, type: 3}
       propertyPath: m_Name
       value: Player Canvas
@@ -823,17 +827,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1006355019 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7464749166023778679, guid: a4f36796795cc2e47b8cd2e7bfde533e, type: 3}
-  m_PrefabInstance: {fileID: 676246101}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1137291466 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7282526528862518017, guid: a4f36796795cc2e47b8cd2e7bfde533e, type: 3}
@@ -1200,13 +1193,17 @@ PrefabInstance:
       value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 114216158892903854, guid: b9ca752c3df4dec4cadafd04fc5d444b, type: 3}
+      propertyPath: weaponName
+      value: AK-47
+      objectReference: {fileID: 0}
+    - target: {fileID: 114216158892903854, guid: b9ca752c3df4dec4cadafd04fc5d444b, type: 3}
       propertyPath: bulletForce
-      value: 0
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114216158892903854, guid: b9ca752c3df4dec4cadafd04fc5d444b, type: 3}
       propertyPath: timescaleText
       value: 
-      objectReference: {fileID: 1006355019}
+      objectReference: {fileID: 0}
     - target: {fileID: 114216158892903854, guid: b9ca752c3df4dec4cadafd04fc5d444b, type: 3}
       propertyPath: totalAmmoText
       value: 

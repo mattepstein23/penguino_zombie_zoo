@@ -8,42 +8,52 @@ public class SpawnController : MonoBehaviour
 
     [SerializeField] GameObject enemy;
 
-    [SerializeField] int waves = 3;
     private int waveCounter;
 
-    [SerializeField] int enemiesPerSpawner = 3;
+    [SerializeField] int[] enemiesPerWave = new int[3];
 
+    [SerializeField] string enemyPrefabName;
+
+    private int currentWaveKills;
     
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
-        waveCounter = 1;
+        waveCounter = 0;
         StartCoroutine(SpawnWave());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentWaveKills == enemiesPerWave[waveCounter])
+        {
+            waveCounter++;
+            currentWaveKills = 0;
+            StartCoroutine(SpawnWave());
+        }
     }
 
     private IEnumerator SpawnWave()
     {
         GameObject newEnemy;
-        for (int i = 0; i < spawnLocations.Length; i++)
+        
+        for (int j = 0; j < enemiesPerWave[waveCounter]; j++)
         {
-            for (int j = 0; j < enemiesPerSpawner; j++)
-            {
-                float offset = Random.Range(0, 2);
-                newEnemy = GameObject.Instantiate(enemy);
-                Vector3 spawnLoc = spawnLocations[i].transform.position;
-                spawnLoc.x += offset;
-                spawnLoc.z += offset;
-                spawnLoc.y = 1;
-                newEnemy.transform.position = spawnLoc;
+            float offset = Random.Range(0f, 2f);
+            newEnemy = GameObject.Instantiate(enemy);
+            Vector3 spawnLoc = spawnLocations[Random.Range(0,spawnLocations.Length)].transform.position;
+            spawnLoc.x += offset;
+            spawnLoc.z += offset;
+            spawnLoc.y = 1;
+            newEnemy.transform.position = spawnLoc;
 
-                yield return new WaitForSeconds(2);
-            }
+            yield return new WaitForSeconds(3);
         }
+    }
+
+    public void AddKill()
+    {
+        currentWaveKills++;
     }
 }

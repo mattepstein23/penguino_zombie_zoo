@@ -8,6 +8,7 @@ TagManager:
   - Metal
   - ExplosiveBarrel
   - Spawner
+  - Enemy
   layers:
   - Default
   - TransparentFX
