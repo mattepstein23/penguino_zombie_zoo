@@ -139,7 +139,7 @@ MonoBehaviour:
     m_Bits: 0
   enemyL:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   attacked: 0
   attackRange: 0
   range: 0
