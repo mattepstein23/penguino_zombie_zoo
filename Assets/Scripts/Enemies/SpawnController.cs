@@ -20,6 +20,8 @@ public class SpawnController : MonoBehaviour
 
     private UnityEngine.UI.Text winText;
 
+    private bool enabled = true;
+
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
@@ -33,18 +35,21 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentWaveKills == enemiesPerWave[waveCounter])
+        if (enabled)
         {
-            waveCounter++;
-            if (waveCounter == enemiesPerWave.Length)
+            if (currentWaveKills == enemiesPerWave[waveCounter])
             {
-                winText.text = "You have defeated all the zombies with your bare Penguin hands";
-            }
-            else
-            {
-                waveLabel.text = (waveCounter + 1).ToString();
-                currentWaveKills = 0;
-                StartCoroutine(SpawnWave());
+                waveCounter++;
+                if (waveCounter == enemiesPerWave.Length)
+                {
+                    winText.text = "You have defeated all the zombies with your bare Penguin hands";
+                }
+                else
+                {
+                    waveLabel.text = (waveCounter + 1).ToString();
+                    currentWaveKills = 0;
+                    StartCoroutine(SpawnWave());
+                }
             }
         }
     }
@@ -70,5 +75,15 @@ public class SpawnController : MonoBehaviour
     public void AddKill()
     {
         currentWaveKills++;
+    }
+
+    public void StopGame()
+    {
+        enabled = false;
+        GameObject[] enemyList = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < enemyList.Length; i++)
+        {
+            Destroy(enemyList[i]);
+        }
     }
 }

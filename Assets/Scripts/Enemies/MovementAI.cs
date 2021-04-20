@@ -9,7 +9,6 @@ public class MovementAI : MonoBehaviour
 
 	[SerializeField] private int jumpRange = 10;
 	private GameObject _fireball;
-	private bool _alive;
 	Rigidbody rb;
 	public float jumpForce = 50;
 	public float timeBeforeNextJump = 1.2f;
@@ -19,7 +18,6 @@ public class MovementAI : MonoBehaviour
 
 	void Start()
 	{
-		_alive = true;
 		rb = GetComponent<Rigidbody>();
 		player = GameObject.Find("Player");
 		rb.freezeRotation = true;
@@ -27,37 +25,43 @@ public class MovementAI : MonoBehaviour
 
 	void Update()
 	{
-		if (_alive)
-		{
-			Vector3 playerPosition = player.transform.position;
+		Vector3 playerPosition = player.transform.position;
 			
-			Vector3 newPos = Vector3.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
-			transform.position = newPos;
+		Vector3 newPos = Vector3.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
+		transform.position = newPos;
 
-			int randomChoice = Random.Range(0, jumpRange);
-			if (randomChoice == 0 && Time.time > canJump)
-			{
-				rb.constraints = RigidbodyConstraints.FreezeRotation;
-				rb.AddForce(0, jumpForce, 0);
-				canJump = Time.time + timeBeforeNextJump;
-			}
-
-			Ray ray = new Ray(transform.position, transform.forward);
-			RaycastHit hit;
-			if (Physics.SphereCast(ray, 0.75f, out hit))
-			{
-				GameObject hitObject = hit.transform.gameObject;
-				if (hit.distance < obstacleRange)
-				{
-					float angle = Random.Range(-110, 110);
-					//transform.Rotate(0, angle, 0);
-				}
-			}
+		int randomChoice = Random.Range(0, jumpRange);
+		if (randomChoice == 0 && Time.time > canJump)
+		{
+			rb.constraints = RigidbodyConstraints.FreezeRotation;
+			rb.AddForce(0, jumpForce, 0);
+			canJump = Time.time + timeBeforeNextJump;
 		}
 	}
 
-	public void SetAlive(bool alive)
-	{
-		_alive = alive;
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+			StartCoroutine(DamagePlayer(collision.gameObject.GetComponent<status>()));
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+		if (collision.gameObject.name == "Player")
+		{
+			StopAllCoroutines();
+		}
 	}
+
+    private IEnumerator DamagePlayer(status health)
+    {
+		while (true)
+        {
+			health.Hurt(0.5f);
+			yield return new WaitForSeconds(0.5f);
+		}
+    }
+
 }
