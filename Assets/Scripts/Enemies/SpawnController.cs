@@ -15,11 +15,18 @@ public class SpawnController : MonoBehaviour
     [SerializeField] string enemyPrefabName;
 
     private int currentWaveKills;
-    
+
+    private UnityEngine.UI.Text waveLabel;
+
+    private UnityEngine.UI.Text winText;
+
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
+        waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
+        winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
         waveCounter = 0;
+        waveLabel.text = (waveCounter + 1).ToString();
         StartCoroutine(SpawnWave());
     }
 
@@ -29,8 +36,16 @@ public class SpawnController : MonoBehaviour
         if (currentWaveKills == enemiesPerWave[waveCounter])
         {
             waveCounter++;
-            currentWaveKills = 0;
-            StartCoroutine(SpawnWave());
+            if (waveCounter == enemiesPerWave.Length)
+            {
+                winText.text = "You have defeated all the zombies with your bare Penguin hands";
+            }
+            else
+            {
+                waveLabel.text = (waveCounter + 1).ToString();
+                currentWaveKills = 0;
+                StartCoroutine(SpawnWave());
+            }
         }
     }
 
