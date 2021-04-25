@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class vacAI : MonoBehaviour
 {
+    private SpawnController spawnController;
     public NavMeshAgent agent;
     public Transform target;
     public LayerMask groundL, enemyL;
@@ -18,6 +19,7 @@ public class vacAI : MonoBehaviour
     {
         target = ClosestEnemy();
         agent = GetComponent<NavMeshAgent>();
+        spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
     }
 
     // Start is called before the first frame update
@@ -76,6 +78,7 @@ public class vacAI : MonoBehaviour
             if (d < range)
             {
                 Destroy(enemyList[i]);
+                spawnController.AddKill();
                 attacked = true;
             }
         }
