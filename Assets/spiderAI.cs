@@ -8,10 +8,14 @@ public class spiderAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform target;
+    public GameObject targetOb;
     public LayerMask groundL, enemyL;
+    private Animator _animator;
 
     public bool attacked = false;
     public float attackRange;
+    public float attackGap;
+    public float damage;
     public bool inRange;
 
     private void Awake()
@@ -22,7 +26,7 @@ public class spiderAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,8 +39,13 @@ public class spiderAI : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("Attacking", false);
             target = ClosestEnemy();
             agent.SetDestination(target.position);
+        }
+        if(gameObject.GetComponent<EnemyHealth>().health <= 0)
+        {
+            _animator.SetBool("Died", true);
         }
     }
 
@@ -53,12 +62,13 @@ public class spiderAI : MonoBehaviour
         {
             for (int i = 0; i < enemyList.Length; i++)
             {
-                Transform e = enemyList[i].transform;
-                float d = Vector3.Distance(transform.position, e.position);
+                GameObject e = enemyList[i];
+                float d = Vector3.Distance(transform.position, e.transform.position);
                 if (d < dis)
                 {
                     dis = d;
-                    enemyC = e;
+                    enemyC = e.transform;
+                    targetOb = e;
                 }
             }
             return enemyC;
@@ -67,6 +77,24 @@ public class spiderAI : MonoBehaviour
 
     private void attack()
     {
+        agent.SetDestination(transform.position);
+        transform.LookAt(target);
 
+        if (!attacked)
+        {
+            _animator.SetBool("Attacking", true);
+            if(targetOb.name == "Player")
+            {
+                targetOb.GetComponent<status>().Hurt(damage);
+            }
+            attacked = true;
+            _animator.SetBool("Attacking", false);
+            Invoke(nameof(ResetAttack), attackGap);
+        }
+    }
+
+    private void ResetAttack()
+    {
+        attacked = false;
     }
 }
