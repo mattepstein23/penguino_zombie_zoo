@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class vacAI : MonoBehaviour
 {
+    private SpawnController spawnController;
+    private ScoreTracker scoreTracker;
     public NavMeshAgent agent;
     public Transform target;
     public LayerMask groundL, enemyL;
@@ -18,6 +20,8 @@ public class vacAI : MonoBehaviour
     {
         target = ClosestEnemy();
         agent = GetComponent<NavMeshAgent>();
+        spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
+        scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
     }
 
     // Start is called before the first frame update
@@ -75,7 +79,9 @@ public class vacAI : MonoBehaviour
             float d = Vector3.Distance(transform.position, e.position);
             if (d < range)
             {
+                scoreTracker.addScore(100);
                 Destroy(enemyList[i]);
+                spawnController.AddKill();
                 attacked = true;
             }
         }

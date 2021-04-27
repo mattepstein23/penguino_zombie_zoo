@@ -9,6 +9,7 @@ TagManager:
   - ExplosiveBarrel
   - Spawner
   - Enemy
+  - Good
   layers:
   - Default
   - TransparentFX

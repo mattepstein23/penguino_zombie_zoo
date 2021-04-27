@@ -15,29 +15,59 @@ public class SpawnController : MonoBehaviour
     [SerializeField] string enemyPrefabName;
 
     private int currentWaveKills;
-    
+
+    private UnityEngine.UI.Text waveLabel;
+
+    private UnityEngine.UI.Text winText;
+
+    private UnityEngine.UI.Text newWave;
+
+    private bool enabled = true;
+
+    private int enemyRequirement;
+
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
+        waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
+        winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
+        newWave = GameObject.Find("NewWave").GetComponent<UnityEngine.UI.Text>();
         waveCounter = 0;
+        waveLabel.text = (waveCounter + 1).ToString();
+        enemyRequirement = enemiesPerWave[waveCounter];
         StartCoroutine(SpawnWave());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentWaveKills == enemiesPerWave[waveCounter])
+        if (enabled)
         {
-            waveCounter++;
-            currentWaveKills = 0;
-            StartCoroutine(SpawnWave());
+            if (currentWaveKills == enemyRequirement)
+            {
+                waveCounter++;
+                if (waveCounter == enemiesPerWave.Length)
+                {
+                    winText.text = "You have defeated all the zombies with your bare Penguin hands";
+                }
+                else
+                {
+                    waveLabel.text = (waveCounter + 1).ToString();
+                    currentWaveKills = 0;
+                    enemyRequirement = enemiesPerWave[waveCounter];
+                    StartCoroutine(SpawnWave());
+                }
+            }
         }
     }
 
     private IEnumerator SpawnWave()
     {
         GameObject newEnemy;
-        
+        newWave.text = "Wave " + (waveCounter + 1).ToString();
+        yield return new WaitForSeconds(2);
+        newWave.text = "";
+
         for (int j = 0; j < enemiesPerWave[waveCounter]; j++)
         {
             float offset = Random.Range(0f, 2f);
@@ -52,8 +82,23 @@ public class SpawnController : MonoBehaviour
         }
     }
 
+    public void AddEnemy()
+    {
+        enemyRequirement++;
+    }
+
     public void AddKill()
     {
         currentWaveKills++;
+    }
+
+    public void StopGame()
+    {
+        enabled = false;
+        GameObject[] enemyList = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < enemyList.Length; i++)
+        {
+            Destroy(enemyList[i]);
+        }
     }
 }
