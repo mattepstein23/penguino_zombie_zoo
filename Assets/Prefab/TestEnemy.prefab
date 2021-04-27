@@ -115,7 +115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.7}
+  m_AnchoredPosition: {x: 0, y: 0.862}
   m_SizeDelta: {x: 21.736, y: 3.5865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5127780572072707277
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4919791906255142124}
   - component: {fileID: 6014168533776034026}
   m_Layer: 6
-  m_Name: TestEnemy 1
+  m_Name: TestEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
