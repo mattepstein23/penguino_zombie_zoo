@@ -238,7 +238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.43980408, y: 0.20689964}
+  m_AnchoredPosition: {x: -0.43981934, y: 0.20690918}
   m_SizeDelta: {x: -7.9448, y: -5.5379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118708165
@@ -723,7 +723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.059295654, y: 0.5270004}
+  m_AnchoredPosition: {x: -0.059326172, y: 0.52697754}
   m_SizeDelta: {x: -16.0086, y: -12.9091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408770179
@@ -1690,7 +1690,7 @@ PrefabInstance:
     - target: {fileID: 734095158, guid: 7d3fcf981905649b9b681bb17c424ac6, type: 3}
       propertyPath: enemyToSpawn
       value: 
-      objectReference: {fileID: 2065728243222930212, guid: b31b430dddd5b324b91c5d43379bf705, type: 3}
+      objectReference: {fileID: 6594248037874649156, guid: 52b24b35d1b38c14d8d872b1412f63b4, type: 3}
     - target: {fileID: 5156865504625311471, guid: 7d3fcf981905649b9b681bb17c424ac6, type: 3}
       propertyPath: m_Name
       value: Mystery Box
@@ -2128,10 +2128,10 @@ RectTransform:
   m_Father: {fileID: 1137291466}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 186.8, y: 706.3}
-  m_SizeDelta: {x: 332.5911, y: 48.999}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -914.2, y: -40}
+  m_SizeDelta: {x: 332.59106, y: 48.999023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499627986
 MonoBehaviour:
@@ -2883,7 +2883,7 @@ PrefabInstance:
     - target: {fileID: 734095158, guid: 7d3fcf981905649b9b681bb17c424ac6, type: 3}
       propertyPath: enemyToSpawn
       value: 
-      objectReference: {fileID: 2065728243222930212, guid: b31b430dddd5b324b91c5d43379bf705, type: 3}
+      objectReference: {fileID: 6594248037874649156, guid: 52b24b35d1b38c14d8d872b1412f63b4, type: 3}
     - target: {fileID: 5156865504625311471, guid: 7d3fcf981905649b9b681bb17c424ac6, type: 3}
       propertyPath: m_Name
       value: Mystery Box (1)
