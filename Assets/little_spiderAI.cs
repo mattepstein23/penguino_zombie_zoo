@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
-public class spiderAI : MonoBehaviour
+public class little_spiderAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform target;
@@ -43,7 +42,7 @@ public class spiderAI : MonoBehaviour
             target = ClosestEnemy();
             agent.SetDestination(target.position);
         }
-        if(gameObject.GetComponent<EnemyHealth>().health <= 0)
+        if (gameObject.GetComponent<EnemyHealth>().health <= 0)
         {
             _animator.SetBool("Died", true);
         }
@@ -83,7 +82,7 @@ public class spiderAI : MonoBehaviour
         if (!attacked)
         {
             _animator.SetBool("Attacking", true);
-            if(targetOb.name == "Player")
+            if (targetOb.name == "Player")
             {
                 targetOb.GetComponent<status>().Hurt(damage);
             }
