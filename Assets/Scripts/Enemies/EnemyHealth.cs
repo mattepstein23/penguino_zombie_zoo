@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] public int health;
+    [SerializeField] public int maxHealth;
+    public int health;
 
     [SerializeField] public int scoreOnKill;
 
@@ -19,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
         hitSoundSource = this.gameObject.GetComponent<AudioSource>();
+        health = maxHealth;
     }
 
     // Update is called once per frame
