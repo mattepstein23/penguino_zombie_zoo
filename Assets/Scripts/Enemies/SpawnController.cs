@@ -8,6 +8,8 @@ public class SpawnController : MonoBehaviour
 
     [SerializeField] GameObject enemy;
 
+    [SerializeField] GameObject spider;
+
     private int waveCounter;
 
     [SerializeField] int[] enemiesPerWave = new int[3];
@@ -68,18 +70,25 @@ public class SpawnController : MonoBehaviour
         yield return new WaitForSeconds(2);
         newWave.text = "";
 
+        GameObject newSpider = GameObject.Instantiate(spider);
+        Vector3 spawnLoc = spawnLocations[Random.Range(0, spawnLocations.Length)].transform.position;
+        spawnLoc.y = 1;
+        newSpider.transform.position = spawnLoc;
+
         for (int j = 0; j < enemiesPerWave[waveCounter]; j++)
         {
             float offset = Random.Range(0f, 2f);
             newEnemy = GameObject.Instantiate(enemy);
-            Vector3 spawnLoc = spawnLocations[Random.Range(0,spawnLocations.Length)].transform.position;
-            spawnLoc.x += offset;
-            spawnLoc.z += offset;
-            spawnLoc.y = 1;
-            newEnemy.transform.position = spawnLoc;
+            Vector3 spawnLoc2 = spawnLocations[Random.Range(0,spawnLocations.Length)].transform.position;
+            spawnLoc2.x += offset;
+            spawnLoc2.z += offset;
+            spawnLoc2.y = 1;
+            newEnemy.transform.position = spawnLoc2;
 
             yield return new WaitForSeconds(3);
         }
+
+
     }
 
     public void AddEnemy()

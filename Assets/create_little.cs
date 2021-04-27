@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class create_little : MonoBehaviour
 {
-    public GameObject little_spider;
+    [SerializeField] public GameObject little_spider;
+
+    private EnemyHealth health;
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = gameObject.GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.GetComponent<EnemyHealth>().health <= 0)
+        if(health.health <= 0)
         {
             Instantiate(little_spider, transform.position + transform.forward*2, transform.rotation);
             Instantiate(little_spider, transform.position - transform.forward * 2, transform.rotation*Quaternion.Euler(0f,180f,0f));

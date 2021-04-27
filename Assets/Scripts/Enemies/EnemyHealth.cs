@@ -15,6 +15,8 @@ public class EnemyHealth : MonoBehaviour
     private AudioSource hitSoundSource;
     private ScoreTracker scoreTracker;
 
+    [SerializeField] public bool disableWaveEffects = false;
+
     private void Start()
     {
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
@@ -29,7 +31,10 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             Destroy(this.gameObject);
-            spawnController.AddKill();
+            if (!disableWaveEffects)
+            {
+                spawnController.AddKill();
+            }
             scoreTracker.addScore(scoreOnKill);
         }
     }
@@ -42,7 +47,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void Vaccinate()
     {
-        spawnController.AddKill();
+        if (!disableWaveEffects)
+        {
+            spawnController.AddKill();
+        }
         Vector3 pos = this.gameObject.transform.position;
         Destroy(this.gameObject);
         GameObject vaxxed = Instantiate(vaxEnemy);
