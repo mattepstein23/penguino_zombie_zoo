@@ -38,12 +38,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85af15710af84c759c3647e34ea1dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInRange: 0
-  interactKey: 101
+  range: 2
+  interactKey: 98
   interactAction:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 734095158}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Open
         m_Mode: 1
         m_Arguments:
@@ -66,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3b9886f926b4cfcaa93156e9407d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 2065728243222930212, guid: b31b430dddd5b324b91c5d43379bf705, type: 3}
 --- !u!1001 &5156865504625436893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,7 +77,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 136754, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
       propertyPath: m_Name
-      value: Chest
+      value: Mystery Box
       objectReference: {fileID: 0}
     - target: {fileID: 461022, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
       propertyPath: m_RootOrder
@@ -129,7 +131,6 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
 --- !u!1 &5156865504625311471 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 136754, guid: 97a5370926a5afe459de07335829d2d3,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 136754, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
   m_PrefabInstance: {fileID: 5156865504625436893}
   m_PrefabAsset: {fileID: 0}

@@ -16,6 +16,10 @@ public class MovementAI : MonoBehaviour
 
 	private GameObject player;
 
+	public bool jumpEnabled = true;
+
+	public bool trackingEnabled = true;
+
 	void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -25,17 +29,23 @@ public class MovementAI : MonoBehaviour
 
 	void Update()
 	{
-		Vector3 playerPosition = player.transform.position;
-			
-		Vector3 newPos = Vector3.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
-		transform.position = newPos;
+		if (trackingEnabled)
+        {
+			Vector3 playerPosition = player.transform.position;
 
-		int randomChoice = Random.Range(0, jumpRange);
-		if (randomChoice == 0 && Time.time > canJump)
-		{
-			rb.constraints = RigidbodyConstraints.FreezeRotation;
-			rb.AddForce(0, jumpForce, 0);
-			canJump = Time.time + timeBeforeNextJump;
+			Vector3 newPos = Vector3.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
+			transform.position = newPos;
+
+			int randomChoice = Random.Range(0, jumpRange);
+			if (jumpEnabled)
+			{
+				if (randomChoice == 0 && Time.time > canJump)
+				{
+					rb.constraints = RigidbodyConstraints.FreezeRotation;
+					rb.AddForce(0, jumpForce, 0);
+					canJump = Time.time + timeBeforeNextJump;
+				}
+			}
 		}
 	}
 

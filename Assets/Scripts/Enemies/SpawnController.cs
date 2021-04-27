@@ -20,15 +20,21 @@ public class SpawnController : MonoBehaviour
 
     private UnityEngine.UI.Text winText;
 
+    private UnityEngine.UI.Text newWave;
+
     private bool enabled = true;
+
+    private int enemyRequirement;
 
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
         waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
         winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
+        newWave = GameObject.Find("NewWave").GetComponent<UnityEngine.UI.Text>();
         waveCounter = 0;
         waveLabel.text = (waveCounter + 1).ToString();
+        enemyRequirement = enemiesPerWave[waveCounter];
         StartCoroutine(SpawnWave());
     }
 
@@ -37,7 +43,7 @@ public class SpawnController : MonoBehaviour
     {
         if (enabled)
         {
-            if (currentWaveKills == enemiesPerWave[waveCounter])
+            if (currentWaveKills == enemyRequirement)
             {
                 waveCounter++;
                 if (waveCounter == enemiesPerWave.Length)
@@ -48,6 +54,7 @@ public class SpawnController : MonoBehaviour
                 {
                     waveLabel.text = (waveCounter + 1).ToString();
                     currentWaveKills = 0;
+                    enemyRequirement = enemiesPerWave[waveCounter];
                     StartCoroutine(SpawnWave());
                 }
             }
@@ -57,7 +64,10 @@ public class SpawnController : MonoBehaviour
     private IEnumerator SpawnWave()
     {
         GameObject newEnemy;
-        
+        newWave.text = "Wave " + (waveCounter + 1).ToString();
+        yield return new WaitForSeconds(2);
+        newWave.text = "";
+
         for (int j = 0; j < enemiesPerWave[waveCounter]; j++)
         {
             float offset = Random.Range(0f, 2f);
@@ -70,6 +80,11 @@ public class SpawnController : MonoBehaviour
 
             yield return new WaitForSeconds(3);
         }
+    }
+
+    public void AddEnemy()
+    {
+        enemyRequirement++;
     }
 
     public void AddKill()

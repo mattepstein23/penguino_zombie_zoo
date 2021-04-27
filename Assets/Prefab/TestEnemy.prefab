@@ -132,6 +132,8 @@ MonoBehaviour:
   jumpRange: 10
   jumpForce: 100000
   timeBeforeNextJump: 1.2
+  jumpEnabled: 1
+  trackingEnabled: 1
 --- !u!114 &247440621922637708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  scoreOnKill: 50
+  vaxEnemy: {fileID: 7409318652606343833, guid: 03753f6a81b223847b997728d9fa4201, type: 3}
 --- !u!82 &1467917471268979594
 AudioSource:
   m_ObjectHideFlags: 0

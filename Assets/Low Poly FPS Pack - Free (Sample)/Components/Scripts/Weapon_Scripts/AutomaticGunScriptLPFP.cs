@@ -8,6 +8,9 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	//Animator component attached to weapon
 	Animator anim;
 
+	private int vaccinations;
+	private GameObject player;
+
 	[Header("Gun Camera")]
 	//Main gun camera
 	public Camera gunCamera;
@@ -182,6 +185,8 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 
 		//Set the shoot sound to audio source
 		shootAudioSource.clip = SoundClips.shootSound;
+
+		player = GameObject.Find("Player");
 	}
 
 	private void LateUpdate () {
@@ -288,14 +293,12 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		AnimationCheck ();
 
 		//Play knife attack 1 animation when Q key is pressed
-		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
-		{
-			anim.Play ("Knife Attack 1", 0, 0f);
-		}
-		//Play knife attack 2 animation when F key is pressed
-		if (Input.GetKeyDown (KeyCode.F) && !isInspecting) 
-		{
-			anim.Play ("Knife Attack 2", 0, 0f);
+		if (vaccinations > 0)
+        {
+			if (Input.GetKeyDown(KeyCode.Q) && !isInspecting)
+			{
+				StartCoroutine(Knife());
+			}
 		}
 			
 		//Throw grenade when pressing G key
@@ -492,6 +495,18 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		}
 	}
 
+	private IEnumerator Knife()
+    {
+		vaccinations--;
+		player.GetComponent<Vaccination>().vaccinating = true;
+		anim.Play("Knife Attack 1", 0, 0f);
+		yield return new WaitForSeconds(3);
+		player.GetComponent<Vaccination>().vaccinating = false;
+	}
+	public void addVac()
+    {
+		this.vaccinations++;
+    }
 	private IEnumerator GrenadeSpawnDelay () {
 		
 		//Wait for set amount of time before spawning grenade
