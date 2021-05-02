@@ -16,9 +16,17 @@ public class vacAI : MonoBehaviour
     public float range;
     public bool inRange;
 
+    private MeshRenderer[] mat;
+    private Animator anim;
+    private ParticleSystem ps;
+
+    [SerializeField] GameObject explosion;
+
     private void Awake()
     {
         target = ClosestEnemy();
+        anim = GetComponent<Animator>();
+        ps = GetComponent<ParticleSystem>();
         agent = GetComponent<NavMeshAgent>();
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
@@ -27,7 +35,17 @@ public class vacAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        changeVaxxedMaterial();
+        ps.Play();
+    }
 
+    private void changeVaxxedMaterial()
+    {
+        mat = this.gameObject.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < mat.Length; i++)
+        {
+            mat[i].material.mainTextureScale = new Vector2(1, 1);
+        }
     }
 
     // Update is called once per frame
@@ -37,10 +55,12 @@ public class vacAI : MonoBehaviour
         if (inRange)
         {
             Boom();
+            GameObject.Instantiate(this.explosion, this.transform.position, new Quaternion());
         }
         else
         {
             target = ClosestEnemy();
+            anim.SetInteger("Walk", 1);
             agent.SetDestination(target.position);
         }
     }
