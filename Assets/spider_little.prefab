@@ -566,7 +566,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: ccfecddd7672ce145baa69d58660bbdf, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -601,6 +601,7 @@ MonoBehaviour:
   health: 50
   scoreOnKill: 50
   vaxEnemy: {fileID: 0}
+  disableWaveEffects: 0
 --- !u!195 &712211848638048817
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -610,7 +611,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 712799127117168582}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.2
   m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50

@@ -1625,7 +1625,7 @@ MonoBehaviour:
   maxHealth: 200
   health: 200
   scoreOnKill: 200
-  vaxEnemy: {fileID: 6594248037874649156, guid: 52b24b35d1b38c14d8d872b1412f63b4, type: 3}
+  vaxEnemy: {fileID: 1079668087795133390, guid: cd51a949c77a31c4f99e7d0af81946aa, type: 3}
   disableWaveEffects: 1
 --- !u!114 &1709508810486231802
 MonoBehaviour:

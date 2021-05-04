@@ -8,12 +8,14 @@ public class status : MonoBehaviour
     private float _maxHealth;
     private SpawnController spawnController;
     private UnityEngine.UI.Text dieText;
+    private int _shield;
 
     // Start is called before the first frame update
     void Start()
     {
         _health = 5f;
         _maxHealth = 10f;
+        _shield = 0;
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         dieText = GameObject.Find("DieText").GetComponent<UnityEngine.UI.Text>();
     }
@@ -35,8 +37,15 @@ public class status : MonoBehaviour
 
     public void Hurt(float damage)
     {
-        _health -= damage;
-        Debug.Log("Health:" + _health);
+        if(_shield <= 0)
+        {
+            _health -= damage;
+            Debug.Log("Health:" + _health);
+        }
+        else
+        {
+            _shield--;
+        }
     }
 
     public void heal(float healing)
@@ -55,5 +64,15 @@ public class status : MonoBehaviour
     public float getMaxHealth()
     {
         return _maxHealth;
+    }
+
+    public int getShield()
+    {
+        return _shield;
+    }
+
+    public void addShield()
+    {
+        _shield++;
     }
 }
