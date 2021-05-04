@@ -167,8 +167,11 @@ namespace FPSControllerLPFP
 
         private void RotateCameraAndCharacter()
         {
-            var rotationX = _rotationX.Update(RotationXRaw, rotationSmoothness);
-            var rotationY = _rotationY.Update(RotationYRaw, rotationSmoothness);
+            //var rotationX = _rotationX.Update(RotationXRaw, rotationSmoothness);
+            //var rotationY = _rotationY.Update(RotationYRaw, rotationSmoothness);
+            var rotationX = RotationXRaw;
+            var rotationY = RotationYRaw;
+
             var clampedY = RestrictVerticalRotation(rotationY);
             _rotationY.Current = clampedY;
 			var worldUp = arms.InverseTransformDirection(Vector3.up);
