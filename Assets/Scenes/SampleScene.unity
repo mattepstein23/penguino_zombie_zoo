@@ -109,7 +109,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -407,6 +407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 244
@@ -475,6 +479,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -956,6 +968,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mounting_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1948406263984082, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948406263984082, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4162486761845184, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -1022,6 +1042,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -1091,6 +1115,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -2135,9 +2167,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
-      value: 221
+      value: 227
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -2378,9 +2414,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 222
+      value: 226
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -2636,6 +2676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1032551483747090, guid: ef140beec582a5a46a6362fcfc31784d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4209018105610702, guid: ef140beec582a5a46a6362fcfc31784d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2774,6 +2818,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2853,6 +2905,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -3222,6 +3278,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3278,6 +3342,14 @@ PrefabInstance:
     - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_Name
       value: Flat_Cactus_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 437750, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_RootOrder
@@ -3347,6 +3419,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -3476,6 +3556,10 @@ PrefabInstance:
     - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_Name
       value: Stone_2_snow_pal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
@@ -3633,6 +3717,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -3694,6 +3786,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -3888,6 +3988,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 399
@@ -3945,6 +4053,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 314
@@ -4001,6 +4117,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -4075,6 +4195,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -4777,6 +4905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
       value: 284
@@ -4982,6 +5114,10 @@ PrefabInstance:
     - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_Name
       value: FallenBranch (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
@@ -5220,9 +5356,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 228
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -5328,6 +5468,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -5541,6 +5685,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_05_winter_mat
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5733,6 +5885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -5802,6 +5958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 381
@@ -5870,6 +6030,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -6134,6 +6302,14 @@ PrefabInstance:
     - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_Name
       value: steampunk_wall_brick_half (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
@@ -6648,6 +6824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 247
@@ -6721,6 +6901,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -6901,6 +7085,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 307
@@ -6987,6 +7179,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -7372,6 +7572,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
       value: 343
@@ -7509,6 +7717,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -8046,6 +8258,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -8758,6 +8974,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_05_winter_mat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e89432a72f5395458e9de4cc2743aa1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8919,6 +9143,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -9300,9 +9528,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 226
+      value: 222
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -9906,6 +10138,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 308
@@ -10078,6 +10318,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -10287,6 +10531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 372
@@ -10420,6 +10668,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -10575,6 +10831,14 @@ PrefabInstance:
     - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
       propertyPath: m_Name
       value: Mixed_Cactus_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
       propertyPath: m_RootOrder
@@ -10792,6 +11056,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -11211,6 +11483,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 393
@@ -11267,6 +11547,10 @@ PrefabInstance:
     - target: {fileID: 1948406263984082, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
       propertyPath: m_Name
       value: Mounting_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948406263984082, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4162486761845184, guid: 8732d563a511d834e823ac895b8a4004, type: 3}
       propertyPath: m_RootOrder
@@ -11437,6 +11721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 233
@@ -11575,6 +11863,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 290
@@ -11631,6 +11927,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -11931,6 +12235,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flat_Cactus_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 437750, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -12226,6 +12538,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flat_Rock_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -12294,6 +12614,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9d766bec5abc48744b16d772cbe73897, type: 3}
       propertyPath: m_Name
       value: Tree Green 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d766bec5abc48744b16d772cbe73897, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9d766bec5abc48744b16d772cbe73897, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d766bec5abc48744b16d772cbe73897, type: 3}
       propertyPath: m_RootOrder
@@ -12455,6 +12783,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -13030,6 +13362,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -13197,6 +13537,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -13542,6 +13890,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 291
@@ -13667,6 +14023,14 @@ PrefabInstance:
     - target: {fileID: 1000012936420096, guid: a6dbabfd6d3c8cb47b7243b0b8723af2, type: 3}
       propertyPath: m_Name
       value: Pine_Snowy3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012936420096, guid: a6dbabfd6d3c8cb47b7243b0b8723af2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012936420096, guid: a6dbabfd6d3c8cb47b7243b0b8723af2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4000011275134666, guid: a6dbabfd6d3c8cb47b7243b0b8723af2, type: 3}
       propertyPath: m_RootOrder
@@ -14264,6 +14628,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -14881,6 +15249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
       value: 351
@@ -15076,6 +15448,14 @@ PrefabInstance:
     - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_Name
       value: WoodFence1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 1025681519537473006, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_RootOrder
@@ -15297,6 +15677,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -16052,6 +16440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 241
@@ -16276,6 +16668,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 316
@@ -16342,6 +16742,14 @@ PrefabInstance:
     - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_Name
       value: WoodFence1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 1025681519537473006, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_RootOrder
@@ -16640,6 +17048,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 36fc42fe9569bcf418153ebca3559926, type: 3}
       propertyPath: m_Name
       value: Tree_01_winter_mat
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 36fc42fe9569bcf418153ebca3559926, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 36fc42fe9569bcf418153ebca3559926, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 36fc42fe9569bcf418153ebca3559926, type: 3}
       propertyPath: m_RootOrder
@@ -16952,6 +17368,14 @@ PrefabInstance:
     - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_Name
       value: roman_wall_door_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4946680430360974, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_RootOrder
@@ -17405,6 +17829,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 10 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -17557,9 +17989,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
-      value: 218
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -17621,6 +18057,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -17918,6 +18358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 373
@@ -18170,6 +18614,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 320
@@ -18338,6 +18790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
       value: 282
@@ -18402,6 +18858,14 @@ PrefabInstance:
     - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
       propertyPath: m_RootOrder
@@ -18694,6 +19158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 232
@@ -18803,6 +19271,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f291f2c0eb2417f4caf766c8b1386d5e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -18864,6 +19340,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -19701,6 +20181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_2_snow_pal (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
       value: 404
@@ -20164,6 +20648,14 @@ PrefabInstance:
     - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
       propertyPath: m_Name
       value: WoodFence2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 487885705732503582, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
       propertyPath: m_RootOrder
@@ -20890,6 +21382,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 311
@@ -20977,9 +21477,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
-      value: 219
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -21041,6 +21545,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -21226,6 +21734,14 @@ PrefabInstance:
     - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_Name
       value: steampunk_wall_brick_half (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
@@ -21655,6 +22171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_fence_wood_2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
       value: 336
@@ -21723,6 +22247,10 @@ PrefabInstance:
     - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_Name
       value: Stone_2_snow_pal (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
@@ -21995,6 +22523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1256858306203008, guid: 93acc49b5a9f4e84b89aa62e0282a2a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4156798437703472, guid: 93acc49b5a9f4e84b89aa62e0282a2a3, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -22094,6 +22626,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 396
@@ -22150,6 +22690,14 @@ PrefabInstance:
     - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_Name
       value: steampunk_wall_brick_half (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
@@ -22679,6 +23227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 376
@@ -22752,6 +23304,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -23185,6 +23741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 248
@@ -23513,6 +24073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 213
@@ -23773,6 +24337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_2_snow_pal
       objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -23841,6 +24409,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -24061,6 +24633,14 @@ PrefabInstance:
     - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_Name
       value: roman_wall_door_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4946680430360974, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_RootOrder
@@ -24304,6 +24884,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
       value: 347
@@ -24542,6 +25130,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -24843,6 +25435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_2_snow_pal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
       value: 403
@@ -24980,6 +25576,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -25350,6 +25950,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_door_4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4946680430360974, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_RootOrder
       value: 394
@@ -25501,9 +26109,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
-      value: 217
+      value: 231
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -25600,6 +26212,10 @@ PrefabInstance:
     - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_Name
       value: FallenBranch (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
@@ -25867,6 +26483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 216
@@ -26132,6 +26752,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodFence1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
+      objectReference: {fileID: 0}
     - target: {fileID: 1025681519537473006, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -26274,6 +26902,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -26422,6 +27058,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -26591,6 +27235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 371
@@ -26670,6 +27318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 378
@@ -26739,9 +27391,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 231
+      value: 217
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -27276,6 +27932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 234
@@ -27488,6 +28148,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_Name
       value: Tree Green 10 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_RootOrder
@@ -27769,6 +28437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: enchantedforest_tree_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1706610291850926, guid: 7561da044a00645e39d086b91c138738, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706610291850926, guid: 7561da044a00645e39d086b91c138738, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4606305320375762, guid: 7561da044a00645e39d086b91c138738, type: 3}
       propertyPath: m_RootOrder
       value: 407
@@ -27870,6 +28546,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ff14cd0f332a7e04baab73f8c39b3918, type: 3}
       propertyPath: m_Name
       value: Rock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ff14cd0f332a7e04baab73f8c39b3918, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff14cd0f332a7e04baab73f8c39b3918, type: 3}
       propertyPath: m_RootOrder
@@ -28221,6 +28901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 214
@@ -28385,6 +29069,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 21db04ffcfdc6b34dbfae3af89222397, type: 3}
       propertyPath: m_Name
       value: Desert_Ground_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 21db04ffcfdc6b34dbfae3af89222397, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21db04ffcfdc6b34dbfae3af89222397, type: 3}
       propertyPath: m_RootOrder
@@ -28587,6 +29275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -28735,6 +29427,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_door_4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4946680430360974, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_RootOrder
       value: 398
@@ -28803,6 +29503,10 @@ PrefabInstance:
     - target: {fileID: 1409411201565446, guid: 1b6f3d5a3b076480e92b2da6db7e17de, type: 3}
       propertyPath: m_Name
       value: enchantedforest_bridge_stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409411201565446, guid: 1b6f3d5a3b076480e92b2da6db7e17de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4840621389815684, guid: 1b6f3d5a3b076480e92b2da6db7e17de, type: 3}
       propertyPath: m_RootOrder
@@ -29412,6 +30116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_2_snow_pal (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 103772, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 485340, guid: 81492d11fd910da4ca58a868e03b9633, type: 3}
       propertyPath: m_RootOrder
       value: 405
@@ -29635,6 +30343,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 310
@@ -29691,6 +30407,10 @@ PrefabInstance:
     - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_Name
       value: FallenBranch (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
@@ -29806,6 +30526,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -30197,6 +30925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 369
@@ -30265,6 +30997,14 @@ PrefabInstance:
     - target: {fileID: 1856861724390114, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 3}
       propertyPath: m_Name
       value: Mounting_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856861724390114, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856861724390114, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4619486662236612, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 3}
       propertyPath: m_RootOrder
@@ -30493,6 +31233,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 305
@@ -30689,6 +31437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_01_summer_mat
       objectReference: {fileID: 0}
+    - target: {fileID: 188070, guid: 9edfae1deb6e5ab4e9a67b847a9db4af, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 188070, guid: 9edfae1deb6e5ab4e9a67b847a9db4af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 491442, guid: 9edfae1deb6e5ab4e9a67b847a9db4af, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -30757,6 +31513,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -31045,6 +31809,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 295
@@ -31137,6 +31909,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 324
@@ -31216,6 +31996,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -31343,6 +32127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 377
@@ -31441,6 +32229,14 @@ PrefabInstance:
     - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
       propertyPath: m_Name
       value: Mixed_Cactus_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143784, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 5d8a4c5c2390fc54e96a652c3eeaf313, type: 3}
       propertyPath: m_RootOrder
@@ -31753,6 +32549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_20_summer_mat
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 603d5d12aa14b134d9d40a83f3b4cebc, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 603d5d12aa14b134d9d40a83f3b4cebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 603d5d12aa14b134d9d40a83f3b4cebc, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -31821,6 +32625,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_Name
       value: Tree Green 10 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_RootOrder
@@ -31913,6 +32725,14 @@ PrefabInstance:
     - target: {fileID: 1567778426036168570, guid: c00ecfa9e008e304ca87beda15e69f43, type: 3}
       propertyPath: m_Name
       value: Rock11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567778426036168570, guid: c00ecfa9e008e304ca87beda15e69f43, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567778426036168570, guid: c00ecfa9e008e304ca87beda15e69f43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 1567778426036665178, guid: c00ecfa9e008e304ca87beda15e69f43, type: 3}
       propertyPath: m_RootOrder
@@ -32242,6 +33062,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -33420,6 +34248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flat_Cactus_02
       objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 437750, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -34164,6 +35000,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 390
@@ -34220,6 +35064,14 @@ PrefabInstance:
     - target: {fileID: 1371598241635088, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
       propertyPath: m_Name
       value: Rock_5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371598241635088, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371598241635088, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4025704486191332, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
       propertyPath: m_RootOrder
@@ -34278,9 +35130,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 225
+      value: 223
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -34678,6 +35534,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
       value: 341
@@ -34799,6 +35663,14 @@ PrefabInstance:
     - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_Name
       value: WoodFence1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025681519537117646, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 1025681519537473006, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
       propertyPath: m_RootOrder
@@ -34981,9 +35853,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 227
+      value: 221
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -35133,6 +36009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 379
@@ -35202,6 +36082,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Stump 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2ab14cb99e98ac441800b6c4955ecb42, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2ab14cb99e98ac441800b6c4955ecb42, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2ab14cb99e98ac441800b6c4955ecb42, type: 3}
       propertyPath: m_RootOrder
       value: 98
@@ -35270,6 +36158,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -35813,6 +36709,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -36645,6 +37549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_fence_wood_2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
       value: 335
@@ -36724,6 +37636,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_fence_wood_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
       value: 328
@@ -36792,6 +37712,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -36862,6 +37786,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1337108901918474, guid: da41fd2967a439d409358c2214a5409e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1337108901918474, guid: da41fd2967a439d409358c2214a5409e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4137486168269956, guid: da41fd2967a439d409358c2214a5409e, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -36928,6 +37860,14 @@ PrefabInstance:
     - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
       propertyPath: m_Name
       value: WoodFence2
+      objectReference: {fileID: 0}
+    - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 487885705732334654, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967263
       objectReference: {fileID: 0}
     - target: {fileID: 487885705732503582, guid: 5172505cfbc25c644ad2ab70b9c6271a, type: 3}
       propertyPath: m_RootOrder
@@ -36997,6 +37937,14 @@ PrefabInstance:
     - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
       propertyPath: m_RootOrder
@@ -37815,6 +38763,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 309
@@ -37871,6 +38827,14 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_RootOrder
@@ -37961,6 +38925,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -38292,21 +39264,21 @@ Transform:
   - {fileID: 530584152}
   - {fileID: 1065347757}
   - {fileID: 1489818890}
-  - {fileID: 497037266}
-  - {fileID: 874407716}
-  - {fileID: 1371452995}
-  - {fileID: 1985484615}
-  - {fileID: 755457779}
-  - {fileID: 1219562830}
-  - {fileID: 419860643}
-  - {fileID: 1197757604}
-  - {fileID: 774145558}
-  - {fileID: 1612253124}
-  - {fileID: 1309209978}
-  - {fileID: 47957559}
-  - {fileID: 965729590}
-  - {fileID: 1497900756}
   - {fileID: 715118370}
+  - {fileID: 1497900756}
+  - {fileID: 965729590}
+  - {fileID: 47957559}
+  - {fileID: 1309209978}
+  - {fileID: 1612253124}
+  - {fileID: 774145558}
+  - {fileID: 1197757604}
+  - {fileID: 419860643}
+  - {fileID: 1219562830}
+  - {fileID: 755457779}
+  - {fileID: 1985484615}
+  - {fileID: 1371452995}
+  - {fileID: 874407716}
+  - {fileID: 497037266}
   - {fileID: 1591963966}
   - {fileID: 1347693285}
   - {fileID: 159455186}
@@ -38504,6 +39476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 209
@@ -38630,6 +39606,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d288b039beecd234b907927b55a30107, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d288b039beecd234b907927b55a30107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d288b039beecd234b907927b55a30107, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -38707,6 +39691,10 @@ PrefabInstance:
     - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_Name
       value: FallenBranch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
@@ -38943,6 +39931,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_5
       objectReference: {fileID: 0}
+    - target: {fileID: 1371598241635088, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371598241635088, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4025704486191332, guid: 3a33ce58c20826a4ea7253f84444654b, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -39133,6 +40129,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_6
       objectReference: {fileID: 0}
+    - target: {fileID: 1106205639809762, guid: c53e680fdc8fae04d91b4ce9e548d2df, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106205639809762, guid: c53e680fdc8fae04d91b4ce9e548d2df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4024617225401250, guid: c53e680fdc8fae04d91b4ce9e548d2df, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -39265,6 +40269,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -39482,6 +40490,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -39724,6 +40740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
       value: 350
@@ -39834,6 +40854,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
       propertyPath: m_Name
       value: Rock4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
       propertyPath: m_RootOrder
@@ -40005,6 +41033,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4c3cbb765dc1a514e95c24a788dcf485, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -40082,6 +41118,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -40398,6 +41438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 275
@@ -40471,6 +41515,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -40641,6 +41693,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 391
@@ -40727,6 +41787,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2e65c077573af0743a0466074faa55b3, type: 3}
       propertyPath: m_Name
       value: Rock 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e65c077573af0743a0466074faa55b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e65c077573af0743a0466074faa55b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2e65c077573af0743a0466074faa55b3, type: 3}
       propertyPath: m_RootOrder
@@ -41032,6 +42100,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 322
@@ -41088,6 +42164,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -41167,6 +42251,10 @@ PrefabInstance:
     - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_Name
       value: FallenBranch (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
@@ -41591,6 +42679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
       value: 349
@@ -41962,6 +43054,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_20_winter_mat
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5f3892bb245c426408375049802e0f5e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5f3892bb245c426408375049802e0f5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f3892bb245c426408375049802e0f5e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -42234,6 +43334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 246
@@ -42501,6 +43605,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_fence_wood_2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
       value: 334
@@ -42640,6 +43752,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -43210,6 +44330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
       value: 243
@@ -43498,6 +44622,10 @@ PrefabInstance:
     - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_Name
       value: island_dock (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
@@ -43984,6 +45112,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69b3b21206cc9641a81c943795a7a8c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69b3b21206cc9641a81c943795a7a8c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b69b3b21206cc9641a81c943795a7a8c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -44113,6 +45249,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -44324,6 +45464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clifftile Diagonal
       objectReference: {fileID: 0}
+    - target: {fileID: 119986, guid: 80e74acf412f1f7419369c6003532087, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 119986, guid: 80e74acf412f1f7419369c6003532087, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 478454, guid: 80e74acf412f1f7419369c6003532087, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -44480,6 +45628,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 01
       objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -44630,6 +45786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallenBranch (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5788968203525986472, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967287
+      objectReference: {fileID: 0}
     - target: {fileID: 5788968203526145160, guid: f8ccaa39b2ab7414796d8eaab4b7bb81, type: 3}
       propertyPath: m_RootOrder
       value: 383
@@ -44714,6 +45874,14 @@ PrefabInstance:
     - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_Name
       value: Flat_Cactus_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 437750, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
       propertyPath: m_RootOrder
@@ -44989,9 +46157,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 230
+      value: 218
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -45115,6 +46287,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
@@ -45317,9 +46497,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 229
+      value: 219
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -45640,6 +46824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: enchantedforest_tree_stump_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1409515849745248, guid: cb7e68188a3c74235816fb9bf64e04a1, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409515849745248, guid: cb7e68188a3c74235816fb9bf64e04a1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4836733127638446, guid: cb7e68188a3c74235816fb9bf64e04a1, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -45897,6 +47089,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Green 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -46125,6 +47325,14 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_RootOrder
@@ -46380,6 +47588,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 397
@@ -46436,6 +47652,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -46505,6 +47729,14 @@ PrefabInstance:
     - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_Name
       value: roman_wall_door_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342481515709046, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4946680430360974, guid: ebf2d65a961a74820a0fb5860b6f4d84, type: 3}
       propertyPath: m_RootOrder
@@ -46762,6 +47994,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 292
@@ -46902,6 +48142,10 @@ PrefabInstance:
     - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_Name
       value: victorian_floor_flagstone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
@@ -47685,6 +48929,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 395
@@ -47741,6 +48993,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_Name
       value: Tree Green 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 47cb40aa1af486e44b40d9e529c73f1b, type: 3}
       propertyPath: m_RootOrder
@@ -47939,6 +49199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_wall_4 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
       value: 386
@@ -47995,6 +49263,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -48225,6 +49501,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -48523,9 +49807,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: island_dock (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932873321206794, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_RootOrder
-      value: 223
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 4342666707088880, guid: 0ab5bd23794f44ff192c537291179223, type: 3}
       propertyPath: m_LocalScale.x
@@ -48591,6 +49879,14 @@ PrefabInstance:
     - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_Name
       value: roman_wall_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462757391444784, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4704091761565136, guid: e51dacf9e37604c14a6831a59a1dcbc7, type: 3}
       propertyPath: m_RootOrder
@@ -48689,7 +49985,7 @@ GameObject:
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &2068429143
@@ -48781,6 +50077,14 @@ PrefabInstance:
     - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_Name
       value: Fence Type1 01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 408904, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
       propertyPath: m_RootOrder
@@ -49113,6 +50417,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
       propertyPath: m_Name
       value: Tree Green 5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a1b8be85b2c427b4ab7b1666a8ed17bc, type: 3}
       propertyPath: m_RootOrder
@@ -49761,6 +51073,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: steampunk_wall_brick_half (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851082694307704, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4074963880008178, guid: f328a35bb46e84cdba6cf01a1c5c994a, type: 3}
       propertyPath: m_RootOrder
       value: 297
@@ -50234,9 +51554,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: victorian_floor_flagstone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769280158650164, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_RootOrder
-      value: 220
+      value: 228
       objectReference: {fileID: 0}
     - target: {fileID: 4142349704299652, guid: deb220f1d8b3e41dbb97231ceae6dad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -50308,6 +51632,14 @@ PrefabInstance:
     - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_Name
       value: roman_fence_wood_2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395649303686198, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049110856776190, guid: bf12cc99a5ede4c6694d37f2f4fa98b6, type: 3}
       propertyPath: m_RootOrder
