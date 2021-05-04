@@ -7,6 +7,7 @@ public class create_little : MonoBehaviour
     [SerializeField] public GameObject little_spider;
 
     private EnemyHealth health;
+    private bool spawned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +19,14 @@ public class create_little : MonoBehaviour
     {
         if(health.health <= 0)
         {
-            Instantiate(little_spider, transform.position + transform.forward*2, transform.rotation);
-            Instantiate(little_spider, transform.position - transform.forward * 2, transform.rotation*Quaternion.Euler(0f,180f,0f));
-            Instantiate(little_spider, transform.position + transform.right * 2, transform.rotation * Quaternion.Euler(0f, 90f, 0f));
-            Instantiate(little_spider, transform.position - transform.right * 2, transform.rotation * Quaternion.Euler(0f, -90f, 0f));
+            if (spawned == false)
+            {
+                Instantiate(little_spider, transform.position + transform.forward * 2, transform.rotation);
+                Instantiate(little_spider, transform.position - transform.forward * 2, transform.rotation * Quaternion.Euler(0f, 180f, 0f));
+                Instantiate(little_spider, transform.position + transform.right * 2, transform.rotation * Quaternion.Euler(0f, 90f, 0f));
+                Instantiate(little_spider, transform.position - transform.right * 2, transform.rotation * Quaternion.Euler(0f, -90f, 0f));
+                spawned = true;
+            }
         }
     }
 }
