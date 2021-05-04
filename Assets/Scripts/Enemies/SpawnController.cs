@@ -24,11 +24,20 @@ public class SpawnController : MonoBehaviour
 
     private UnityEngine.UI.Text newWave;
 
+    private PauseMenu pauseMenu;
+
     private bool enabled = true;
 
     private int enemyRequirement;
 
+    private bool gameStarted;
+
     void Start()
+    {
+        pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
+    }
+
+    private void delayedStart()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
         waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
@@ -43,6 +52,14 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!gameStarted)
+        {
+            if (pauseMenu.getStart())
+            {
+                delayedStart();
+                gameStarted = true;
+            }
+        }
         if (enabled)
         {
             if (currentWaveKills == enemyRequirement)

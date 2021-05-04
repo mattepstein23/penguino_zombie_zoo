@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
-        scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
+        scoreTracker = GameObject.Find("ScoreAmount").GetComponent<ScoreTracker>();
         hitSoundSource = this.gameObject.GetComponent<AudioSource>();
         health = maxHealth;
     }
