@@ -13,7 +13,7 @@ public class status : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _health = 5f;
+        _health = 10f;
         _maxHealth = 10f;
         _shield = 0;
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
