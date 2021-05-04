@@ -24,18 +24,19 @@ public class vacAI : MonoBehaviour
 
     private void Awake()
     {
-        target = ClosestEnemy();
-        anim = GetComponent<Animator>();
-        ps = GetComponent<ParticleSystem>();
-        agent = GetComponent<NavMeshAgent>();
-        spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
-        scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
         changeVaxxedMaterial();
+        target = ClosestEnemy();
+        anim = GetComponent<Animator>();
+        ps = GetComponent<ParticleSystem>();
+        agent = GetComponent<NavMeshAgent>();
+        spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
+        scoreTracker = GameObject.Find("ScoreAmount").GetComponent<ScoreTracker>();
         ps.Play();
     }
 

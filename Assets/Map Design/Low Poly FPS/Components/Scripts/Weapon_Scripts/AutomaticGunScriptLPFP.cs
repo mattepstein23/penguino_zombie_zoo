@@ -171,6 +171,8 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		muzzleflashLight.enabled = false;
 	}
 
+	private PauseMenu pauseMenu;
+
 	private void Start () {
 		
 		//Save the weapon name
@@ -187,6 +189,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		shootAudioSource.clip = SoundClips.shootSound;
 
 		player = GameObject.Find("Player");
+		pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
 	}
 
 	private void LateUpdate () {
@@ -212,9 +215,14 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	
 	private void Update () {
 
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			pauseMenu.toggle();
+		}
+
 		//Aiming
 		//Toggle camera FOV when right click is held down
-		if(Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting) 
+		if (Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting) 
 		{
 			
 			isAiming = true;

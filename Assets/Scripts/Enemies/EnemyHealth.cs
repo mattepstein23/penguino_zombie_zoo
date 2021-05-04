@@ -17,10 +17,12 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] public bool disableWaveEffects = false;
 
+    private bool destroyed = false;
+
     private void Start()
     {
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
-        scoreTracker = GameObject.Find("ScoreValue").GetComponent<ScoreTracker>();
+        scoreTracker = GameObject.Find("ScoreAmount").GetComponent<ScoreTracker>();
         hitSoundSource = this.gameObject.GetComponent<AudioSource>();
         health = maxHealth;
     }
@@ -30,13 +32,23 @@ public class EnemyHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(this.gameObject);
-            if (!disableWaveEffects)
+            if (!destroyed)
             {
-                spawnController.AddKill();
+                destroyed = true;
+                StartCoroutine(DestroyEnemy());
+                if (!disableWaveEffects)
+                {
+                    spawnController.AddKill();
+                }
+                scoreTracker.addScore(scoreOnKill);
             }
-            scoreTracker.addScore(scoreOnKill);
         }
+    }
+
+    public IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(this.gameObject);
     }
 
     public void Hit(int damage)

@@ -66,12 +66,17 @@ namespace FPSControllerLPFP
         private SmoothVelocity _velocityZ;
         private bool _isGrounded;
 
+        private bool gamePlaying = false;
+        private PauseMenu pauseMenu;
+
         private readonly RaycastHit[] _groundCastResults = new RaycastHit[8];
         private readonly RaycastHit[] _wallCastResults = new RaycastHit[8];
 
         /// Initializes the FpsController on start.
         private void Start()
         {
+            pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
+
             _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
             _collider = GetComponent<CapsuleCollider>();
@@ -83,7 +88,7 @@ namespace FPSControllerLPFP
             _rotationY = new SmoothRotation(RotationYRaw);
             _velocityX = new SmoothVelocity();
             _velocityZ = new SmoothVelocity();
-            Cursor.lockState = CursorLockMode.Locked;
+            
             ValidateRotationRestriction();
         }
 			
@@ -135,10 +140,14 @@ namespace FPSControllerLPFP
         /// Processes the character movement and the camera rotation every fixed framerate frame.
         private void FixedUpdate()
         {
+            if (gamePlaying)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                RotateCameraAndCharacter();
+                MoveCharacter();
+                _isGrounded = false;
+            }
             // FixedUpdate is used instead of Update because this code is dealing with physics and smoothing.
-            RotateCameraAndCharacter();
-            MoveCharacter();
-            _isGrounded = false;
         }
 			
         /// Moves the camera to the character, processes jumping and plays sounds every frame.
@@ -147,12 +156,22 @@ namespace FPSControllerLPFP
 			arms.position = transform.position + transform.TransformVector(armPosition);
             Jump();
             PlayFootstepSounds();
+
+            gamePlaying = !pauseMenu.getToggle();
+            if (!gamePlaying)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
 
         private void RotateCameraAndCharacter()
         {
-            var rotationX = _rotationX.Update(RotationXRaw, rotationSmoothness);
-            var rotationY = _rotationY.Update(RotationYRaw, rotationSmoothness);
+            //var rotationX = _rotationX.Update(RotationXRaw, rotationSmoothness);
+            //var rotationY = _rotationY.Update(RotationYRaw, rotationSmoothness);
+            var rotationX = RotationXRaw;
+            var rotationY = RotationYRaw;
+
             var clampedY = RestrictVerticalRotation(rotationY);
             _rotationY.Current = clampedY;
 			var worldUp = arms.InverseTransformDirection(Vector3.up);
