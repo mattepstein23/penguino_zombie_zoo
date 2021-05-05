@@ -601,7 +601,7 @@ MonoBehaviour:
   health: 50
   scoreOnKill: 50
   vaxEnemy: {fileID: 0}
-  disableWaveEffects: 0
+  disableWaveEffects: 1
 --- !u!195 &712211848638048817
 NavMeshAgent:
   m_ObjectHideFlags: 0
