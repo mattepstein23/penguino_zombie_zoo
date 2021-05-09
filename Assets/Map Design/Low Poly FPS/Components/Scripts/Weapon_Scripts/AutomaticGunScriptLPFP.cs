@@ -11,6 +11,8 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	private int vaccinations;
 	private GameObject player;
 
+	private bool waterPlaying = false;
+
 	[Header("Gun Camera")]
 	//Main gun camera
 	public Camera gunCamera;
@@ -258,7 +260,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		//If randomize muzzleflash is true, genereate random int values
 		if (randomMuzzleflash == true) 
 		{
-			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
+			//randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
 
 		//Timescale settings
@@ -352,7 +354,11 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 				currentAmmo -= 1;
 
 				shootAudioSource.clip = SoundClips.shootSound;
-				shootAudioSource.Play ();
+				if (!waterPlaying)
+                {
+					shootAudioSource.Play();
+					waterPlaying = true;
+				}
 
 				if (!isAiming) //if not aiming
 				{
@@ -361,9 +367,9 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 					if (!randomMuzzleflash && 
 						enableMuzzleflash == true) 
 					{
-						muzzleParticles.Emit (1);
+						muzzleParticles.Emit (100);
 						//Light flash start
-						StartCoroutine(MuzzleFlashLight());
+						//StartCoroutine(MuzzleFlashLight());
 					} 
 					else if (randomMuzzleflash == true)
 					{
@@ -373,13 +379,13 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 							if (enableSparks == true) 
 							{
 								//Emit random amount of spark particles
-								sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
+								//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
 							}
 							if (enableMuzzleflash == true) 
 							{
-								muzzleParticles.Emit (1);
+								muzzleParticles.Emit (100);
 								//Light flash start
-								StartCoroutine (MuzzleFlashLight ());
+								//StartCoroutine (MuzzleFlashLight ());
 							}
 						}
 					}
@@ -391,7 +397,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 
 					//If random muzzle is false
 					if (!randomMuzzleflash) {
-						muzzleParticles.Emit (1);
+						muzzleParticles.Emit (100);
 					//If random muzzle is true
 					} 
 					else if (randomMuzzleflash == true) 
@@ -402,13 +408,13 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 							if (enableSparks == true) 
 							{
 								//Emit random amount of spark particles
-								sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
+								//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
 							}
 							if (enableMuzzleflash == true) 
 							{
-								muzzleParticles.Emit (1);
+								muzzleParticles.Emit (100);
 								//Light flash start
-								StartCoroutine (MuzzleFlashLight ());
+								//StartCoroutine (MuzzleFlashLight ());
 							}
 						}
 					}
@@ -425,46 +431,51 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 					bullet.transform.forward * bulletForce;
 				
 				//Spawn casing prefab at spawnpoint
-				Instantiate (Prefabs.casingPrefab, 
-					Spawnpoints.casingSpawnPoint.transform.position, 
-					Spawnpoints.casingSpawnPoint.transform.rotation);
+				//Instantiate (Prefabs.casingPrefab, 
+					//Spawnpoints.casingSpawnPoint.transform.position, 
+					//Spawnpoints.casingSpawnPoint.transform.rotation);
 			}
 		}
+		else
+        {
+			waterPlaying = false;
+			shootAudioSource.Stop();
+        }
 
 		//Inspect weapon when T key is pressed
-		if (Input.GetKeyDown (KeyCode.T)) 
-		{
-			anim.SetTrigger ("Inspect");
-		}
+		//if (Input.GetKeyDown (KeyCode.T)) 
+		//{
+		//	anim.SetTrigger ("Inspect");
+		//}
 
 		//Toggle weapon holster when E key is pressed
-		if (Input.GetKeyDown (KeyCode.E) && !hasBeenHolstered) 
-		{
-			holstered = true;
+		//if (Input.GetKeyDown (KeyCode.E) && !hasBeenHolstered) 
+		//{
+		//	holstered = true;
 
-			mainAudioSource.clip = SoundClips.holsterSound;
-			mainAudioSource.Play();
+		//	mainAudioSource.clip = SoundClips.holsterSound;
+		//	mainAudioSource.Play();
 
-			hasBeenHolstered = true;
-		} 
-		else if (Input.GetKeyDown (KeyCode.E) && hasBeenHolstered) 
-		{
-			holstered = false;
+		//	hasBeenHolstered = true;
+		//} 
+		//else if (Input.GetKeyDown (KeyCode.E) && hasBeenHolstered) 
+		//{
+		//	holstered = false;
 
-			mainAudioSource.clip = SoundClips.takeOutSound;
-			mainAudioSource.Play ();
+		//	mainAudioSource.clip = SoundClips.takeOutSound;
+		//	mainAudioSource.Play ();
 
-			hasBeenHolstered = false;
-		}
-		//Holster anim toggle
-		if (holstered == true) 
-		{
-			anim.SetBool ("Holster", true);
-		} 
-		else 
-		{
-			anim.SetBool ("Holster", false);
-		}
+		//	hasBeenHolstered = false;
+		//}
+		////Holster anim toggle
+		//if (holstered == true) 
+		//{
+		//	anim.SetBool ("Holster", true);
+		//} 
+		//else 
+		//{
+		//	anim.SetBool ("Holster", false);
+		//}
 
 		//Reload 
 		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
@@ -605,9 +616,9 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	//Show light when shooting, then disable after set amount of time
 	private IEnumerator MuzzleFlashLight () {
 		
-		muzzleflashLight.enabled = true;
+		//muzzleflashLight.enabled = true;
 		yield return new WaitForSeconds (lightDuration);
-		muzzleflashLight.enabled = false;
+		//muzzleflashLight.enabled = false;
 	}
 
 	//Check current animation playing
