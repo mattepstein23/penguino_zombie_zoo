@@ -7,8 +7,11 @@ public class status : MonoBehaviour
     private float _health;
     private float _maxHealth;
     private SpawnController spawnController;
-    private UnityEngine.UI.Text dieText;
+    [SerializeField]
+    public GameObject dieText;
     private int _shield;
+    private GameObject pauseMenu;
+    private bool ended = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,15 +20,20 @@ public class status : MonoBehaviour
         _maxHealth = 10f;
         _shield = 0;
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
-        dieText = GameObject.Find("DieText").GetComponent<UnityEngine.UI.Text>();
+        pauseMenu = GameObject.Find("Tutorial");
     }
 
     private void Update()
     {
         if (_health <= 0)
         {
-            dieText.text = "You have died, RIP Penguino";
-            spawnController.StopGame();
+            if (ended == false)
+            {
+                pauseMenu.GetComponent<PauseMenu>().toggle();
+                dieText.SetActive(true);
+                spawnController.StopGame();
+                ended = true;
+            }
         }
     }
 
