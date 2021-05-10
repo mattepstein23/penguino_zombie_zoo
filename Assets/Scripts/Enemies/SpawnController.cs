@@ -35,14 +35,14 @@ public class SpawnController : MonoBehaviour
     void Start()
     {
         pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
-    }
-
-    private void delayedStart()
-    {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
         waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
         winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
         newWave = GameObject.Find("NewWave").GetComponent<UnityEngine.UI.Text>();
+    }
+
+    private void delayedStart()
+    {
         waveCounter = 0;
         waveLabel.text = (waveCounter + 1).ToString();
         enemyRequirement = enemiesPerWave[waveCounter];
