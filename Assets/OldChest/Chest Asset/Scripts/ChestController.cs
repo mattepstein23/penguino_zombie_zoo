@@ -8,6 +8,11 @@ public class ChestController : MonoBehaviour
     [SerializeField] public GameObject enemyToSpawn;
     [SerializeField] public GameObject dirtParticles;
 
+    [SerializeField] public AudioClip goodOpen;
+    [SerializeField] public AudioClip badOpen;
+
+    private AudioSource source;
+
     [SerializeField] public bool spawnFront = false;
 
     private bool alreadyOpened = false; 
@@ -34,6 +39,7 @@ public class ChestController : MonoBehaviour
     {
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         playerController = GameObject.Find("arms_assault_rifle_01").GetComponent<AutomaticGunScriptLPFP>();
+        source = this.gameObject.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -64,12 +70,16 @@ public class ChestController : MonoBehaviour
 
             if (random == 0)
             {
+                source.clip = goodOpen;
+                source.Play();
                 StartCoroutine(AddLabel(vaxAdd));
                 this.playerController.addVac();
             }
 
             if (random == 1)
             {
+                source.clip = badOpen;
+                source.Play();
                 StartCoroutine(AddLabel(enemyAdd));
                 StartCoroutine(EnemySpawn());
             }

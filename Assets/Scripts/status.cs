@@ -17,6 +17,10 @@ public class status : MonoBehaviour
     [SerializeField]
     public GameObject shieldBackground;
 
+    private AudioSource audio;
+
+    [SerializeField] public AudioClip hurtSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,15 @@ public class status : MonoBehaviour
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         pauseMenu = GameObject.Find("Tutorial");
         shieldBackground.SetActive(false);
+        AudioSource[] sources = this.gameObject.GetComponents<AudioSource>();
+        for (int i = 0; i < sources.Length; i++)
+        {
+            if (sources[i].mute)
+            {
+                audio = sources[i];
+                audio.mute = false;
+            }
+        }
     }
 
     private void Update()
@@ -66,6 +79,8 @@ public class status : MonoBehaviour
         {
             _health -= damage;
             Debug.Log("Health:" + _health);
+            audio.clip = hurtSound;
+            audio.Play();
         }
         else if( protecting == false)
         {
