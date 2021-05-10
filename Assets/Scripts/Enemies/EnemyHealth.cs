@@ -72,4 +72,8 @@ public class EnemyHealth : MonoBehaviour
         GameObject vaxxed = Instantiate(vaxEnemy);
         vaxxed.transform.position = pos;
     }
+
+    public void SetHealth(){
+        health = 0; 
+    }
 }
