@@ -127,6 +127,8 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	public Text currentAmmoText;
 	public Text totalAmmoText;
 
+	
+
 	[System.Serializable]
 	public class prefabs
 	{  
@@ -193,6 +195,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		//Set the shoot sound to audio source
 		shootAudioSource.clip = SoundClips.shootSound;
 
+		
 		player = GameObject.Find("Player");
 		pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
 	}
@@ -226,6 +229,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		{
 			pauseMenu.toggle();
 			pauseMenu.startGame();
+			
 		}
 
 		//Aiming
@@ -349,104 +353,108 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 			
 		//AUtomatic fire
 		//Left click hold 
-		if (Input.GetMouseButton (0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning) 
-		{
-			//Shoot automatic
-			if (Time.time - lastFired > 1 / fireRate) 
+		if (!pauseMenu.getToggle())
+        {
+			if (Input.GetMouseButton(0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning)
 			{
-				lastFired = Time.time;
-
-				//Remove 1 bullet from ammo
-				currentAmmo -= 1;
-
-				shootAudioSource.clip = SoundClips.shootSound;
-				if (!waterPlaying)
-                {
-					shootAudioSource.Play();
-					waterPlaying = true;
-				}
-
-				if (!isAiming) //if not aiming
+				//Shoot automatic
+				if (Time.time - lastFired > 1 / fireRate)
 				{
-					anim.Play ("Fire", 0, 0f);
-					//If random muzzle is false
-					if (!randomMuzzleflash && 
-						enableMuzzleflash == true) 
+					lastFired = Time.time;
+
+					//Remove 1 bullet from ammo
+					currentAmmo -= 1;
+
+					shootAudioSource.clip = SoundClips.shootSound;
+					if (!waterPlaying)
 					{
-						muzzleParticles.Emit (100);
-						//Light flash start
-						//StartCoroutine(MuzzleFlashLight());
-					} 
-					else if (randomMuzzleflash == true)
+						shootAudioSource.Play();
+						waterPlaying = true;
+					}
+
+					if (!isAiming) //if not aiming
 					{
-						//Only emit if random value is 1
-						if (randomMuzzleflashValue == 1) 
+						anim.Play("Fire", 0, 0f);
+						//If random muzzle is false
+						if (!randomMuzzleflash &&
+							enableMuzzleflash == true)
 						{
-							if (enableSparks == true) 
+							muzzleParticles.Emit(100);
+							//Light flash start
+							//StartCoroutine(MuzzleFlashLight());
+						}
+						else if (randomMuzzleflash == true)
+						{
+							//Only emit if random value is 1
+							if (randomMuzzleflashValue == 1)
 							{
-								//Emit random amount of spark particles
-								//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
-							}
-							if (enableMuzzleflash == true) 
-							{
-								muzzleParticles.Emit (100);
-								//Light flash start
-								//StartCoroutine (MuzzleFlashLight ());
+								if (enableSparks == true)
+								{
+									//Emit random amount of spark particles
+									//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
+								}
+								if (enableMuzzleflash == true)
+								{
+									muzzleParticles.Emit(100);
+									//Light flash start
+									//StartCoroutine (MuzzleFlashLight ());
+								}
 							}
 						}
 					}
-				} 
-				else //if aiming
-				{
-					
-					anim.Play ("Aim Fire", 0, 0f);
-
-					//If random muzzle is false
-					if (!randomMuzzleflash) {
-						muzzleParticles.Emit (100);
-					//If random muzzle is true
-					} 
-					else if (randomMuzzleflash == true) 
+					else //if aiming
 					{
-						//Only emit if random value is 1
-						if (randomMuzzleflashValue == 1) 
+
+						anim.Play("Aim Fire", 0, 0f);
+
+						//If random muzzle is false
+						if (!randomMuzzleflash)
 						{
-							if (enableSparks == true) 
+							muzzleParticles.Emit(100);
+							//If random muzzle is true
+						}
+						else if (randomMuzzleflash == true)
+						{
+							//Only emit if random value is 1
+							if (randomMuzzleflashValue == 1)
 							{
-								//Emit random amount of spark particles
-								//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
-							}
-							if (enableMuzzleflash == true) 
-							{
-								muzzleParticles.Emit (100);
-								//Light flash start
-								//StartCoroutine (MuzzleFlashLight ());
+								if (enableSparks == true)
+								{
+									//Emit random amount of spark particles
+									//sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
+								}
+								if (enableMuzzleflash == true)
+								{
+									muzzleParticles.Emit(100);
+									//Light flash start
+									//StartCoroutine (MuzzleFlashLight ());
+								}
 							}
 						}
 					}
-				}
 
-				//Spawn bullet from bullet spawnpoint
-				var bullet = (Transform)Instantiate (
-					Prefabs.bulletPrefab,
-					Spawnpoints.bulletSpawnPoint.transform.position,
-					Spawnpoints.bulletSpawnPoint.transform.rotation);
+					//Spawn bullet from bullet spawnpoint
+					var bullet = (Transform)Instantiate(
+						Prefabs.bulletPrefab,
+						Spawnpoints.bulletSpawnPoint.transform.position,
+						Spawnpoints.bulletSpawnPoint.transform.rotation);
 
-				//Add velocity to the bullet
-				bullet.GetComponent<Rigidbody>().velocity = 
-					bullet.transform.forward * bulletForce;
-				
-				//Spawn casing prefab at spawnpoint
-				//Instantiate (Prefabs.casingPrefab, 
+					//Add velocity to the bullet
+					bullet.GetComponent<Rigidbody>().velocity =
+						bullet.transform.forward * bulletForce;
+
+					//Spawn casing prefab at spawnpoint
+					//Instantiate (Prefabs.casingPrefab, 
 					//Spawnpoints.casingSpawnPoint.transform.position, 
 					//Spawnpoints.casingSpawnPoint.transform.rotation);
+				}
+			}
+			else
+			{
+				waterPlaying = false;
+				shootAudioSource.Stop();
 			}
 		}
-		else
-        {
-			waterPlaying = false;
-			shootAudioSource.Stop();
-        }
 
 		//Inspect weapon when T key is pressed
 		//if (Input.GetKeyDown (KeyCode.T)) 

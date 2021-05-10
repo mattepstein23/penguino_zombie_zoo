@@ -72,9 +72,13 @@ namespace FPSControllerLPFP
         private readonly RaycastHit[] _groundCastResults = new RaycastHit[8];
         private readonly RaycastHit[] _wallCastResults = new RaycastHit[8];
 
+        [SerializeField] public GameObject sensSlider;
+        private UnityEngine.UI.Slider slide;
+
         /// Initializes the FpsController on start.
         private void Start()
         {
+            slide = sensSlider.GetComponent<UnityEngine.UI.Slider>();
             pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
 
             _rigidbody = GetComponent<Rigidbody>();
@@ -167,8 +171,8 @@ namespace FPSControllerLPFP
 
         private void RotateCameraAndCharacter()
         {
-            var rotationX = _rotationX.Update(RotationXRaw, rotationSmoothness);
-            var rotationY = _rotationY.Update(RotationYRaw, rotationSmoothness);
+            var rotationX = _rotationX.Update(RotationXRaw * slide.value, rotationSmoothness);
+            var rotationY = _rotationY.Update(RotationYRaw * slide.value, rotationSmoothness);
             //var rotationX = RotationXRaw;
             //var rotationY = RotationYRaw;
 

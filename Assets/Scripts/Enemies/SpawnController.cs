@@ -20,7 +20,7 @@ public class SpawnController : MonoBehaviour
 
     private UnityEngine.UI.Text waveLabel;
 
-    private UnityEngine.UI.Text winText;
+    [SerializeField] GameObject winArea;
 
     private UnityEngine.UI.Text newWave;
 
@@ -37,7 +37,6 @@ public class SpawnController : MonoBehaviour
         pauseMenu = GameObject.Find("Tutorial").GetComponent<PauseMenu>();
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawner");
         waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
-        winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
         newWave = GameObject.Find("NewWave").GetComponent<UnityEngine.UI.Text>();
         waveCounter = 0;
         waveLabel.text = (waveCounter + 1).ToString();
@@ -68,7 +67,8 @@ public class SpawnController : MonoBehaviour
                 waveCounter++;
                 if (waveCounter == enemiesPerWave.Length)
                 {
-                    winText.text = "You have defeated all the zombies. Congrats!";
+                    pauseMenu.toggle();
+                    winArea.SetActive(true);
                 }
                 else
                 {
