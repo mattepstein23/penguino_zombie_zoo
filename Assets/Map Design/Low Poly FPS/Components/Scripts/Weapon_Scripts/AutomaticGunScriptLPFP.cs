@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 // ----- Low Poly FPS Pack Free Version -----
 public class AutomaticGunScriptLPFP : MonoBehaviour {
+	int numberOfGrenades = 5; 
 
 	//Animator component attached to weapon
 	Animator anim;
@@ -318,11 +319,17 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		}
 			
 		//Throw grenade when pressing G key
-		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
+		if (Input.GetKeyDown (KeyCode.G) && !isInspecting && numberOfGrenades > 0) 
 		{
 			StartCoroutine (GrenadeSpawnDelay ());
 			//Play grenade throw animation
 			anim.Play("GrenadeThrow", 0, 0.0f);
+
+			//Reduce the Number of Grenades 
+			numberOfGrenades = numberOfGrenades - 1; 
+			Debug.Log("The number of Grenades is" + numberOfGrenades);
+			Text grenadeText = GameObject.Find("GrenadeNumber").GetComponent<Text>();
+			grenadeText.text = numberOfGrenades.ToString();  
 		}
 
 		//If out of ammo
