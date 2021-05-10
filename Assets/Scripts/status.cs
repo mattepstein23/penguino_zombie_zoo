@@ -29,7 +29,6 @@ public class status : MonoBehaviour
         _shield = 0;
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         pauseMenu = GameObject.Find("Tutorial");
-        shieldBackground.SetActive(false);
         AudioSource[] sources = this.gameObject.GetComponents<AudioSource>();
         for (int i = 0; i < sources.Length; i++)
         {
@@ -53,18 +52,21 @@ public class status : MonoBehaviour
                 ended = true;
             }
         }
-        shield_timer += Time.deltaTime;
-        if(shield_timer >= 3)
+        if (_shield > 0)
         {
-            protecting = false;
+            shield_timer += Time.deltaTime;
+            if (shield_timer >= 3)
+            {
+                protecting = false;
+            }
+            else
+            {
+                protecting = true;
+            }
+            shieldBackground.SetActive(protecting);
+            Debug.Log("timer" + shield_timer);
+            Debug.Log("protecting" + protecting);
         }
-        else
-        {
-            protecting = true;
-        }
-        shieldBackground.SetActive(protecting);
-        Debug.Log("timer" + shield_timer);
-        Debug.Log("protecting" + protecting);
     }
 
     // Update is called once per frame
