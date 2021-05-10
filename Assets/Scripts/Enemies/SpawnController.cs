@@ -129,7 +129,10 @@ public class SpawnController : MonoBehaviour
         }
         for (int i = 0; i < goodList.Length; i++)
         {
-            Destroy(goodList[i]);
+            if (goodList[i].name != "Player")
+            {
+                Destroy(goodList[i]);
+            }
         }
     }
 
