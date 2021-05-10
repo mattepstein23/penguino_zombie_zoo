@@ -52,21 +52,6 @@ public class status : MonoBehaviour
                 ended = true;
             }
         }
-        if (_shield > 0)
-        {
-            shield_timer += Time.deltaTime;
-            if (shield_timer >= 3)
-            {
-                protecting = false;
-            }
-            else
-            {
-                protecting = true;
-            }
-            shieldBackground.SetActive(protecting);
-            Debug.Log("timer" + shield_timer);
-            Debug.Log("protecting" + protecting);
-        }
     }
 
     // Update is called once per frame
@@ -75,19 +60,19 @@ public class status : MonoBehaviour
         return _health;
     }
 
+    
     public void Hurt(float damage)
     {
-        if(_shield <= 0 && protecting == false)
+        if (_shield <= 0)
         {
             _health -= damage;
             Debug.Log("Health:" + _health);
             audio.clip = hurtSound;
             audio.Play();
         }
-        else if( protecting == false)
+        else
         {
             _shield--;
-            shield_timer = 0f;
         }
     }
 

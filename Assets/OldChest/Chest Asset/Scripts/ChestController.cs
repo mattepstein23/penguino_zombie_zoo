@@ -47,7 +47,7 @@ public class ChestController : MonoBehaviour
         if (activateSpawn)
         {
             enemySpawn.transform.Translate(new Vector3(0, 0.5f, 0) * Time.deltaTime);
-            if (enemySpawn.transform.position.y >= 0)
+            if (enemySpawn.transform.position.y >= 0.2)
             {
                 activateSpawn = false;
                 enemyRb.useGravity = true;
