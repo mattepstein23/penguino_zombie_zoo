@@ -62,12 +62,12 @@ public class SpawnController : MonoBehaviour
         }
         if (enabled)
         {
-            if (currentWaveKills == enemyRequirement)
+            if (currentWaveKills >= enemyRequirement)
             {
                 waveCounter++;
                 if (waveCounter == enemiesPerWave.Length)
                 {
-                    winText.text = "You have defeated all the zombies with your bare Penguin hands";
+                    winText.text = "You have defeated all the zombies. Congrats!";
                 }
                 else
                 {
@@ -122,9 +122,25 @@ public class SpawnController : MonoBehaviour
     {
         enabled = false;
         GameObject[] enemyList = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] goodList = GameObject.FindGameObjectsWithTag("Good");
         for (int i = 0; i < enemyList.Length; i++)
         {
             Destroy(enemyList[i]);
         }
+        for (int i = 0; i < goodList.Length; i++)
+        {
+            Destroy(goodList[i]);
+        }
+    }
+
+    public void SpawnNewEnemy()
+    {
+        float offset = Random.Range(0f, 2f);
+        GameObject newEnemy = GameObject.Instantiate(enemy);
+        Vector3 spawnLoc2 = spawnLocations[Random.Range(0, spawnLocations.Length)].transform.position;
+        spawnLoc2.x += offset;
+        spawnLoc2.z += offset;
+        spawnLoc2.y = 1;
+        newEnemy.transform.position = spawnLoc2;
     }
 }

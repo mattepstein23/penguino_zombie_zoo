@@ -43,6 +43,10 @@ public class EnemyHealth : MonoBehaviour
                 scoreTracker.addScore(scoreOnKill);
             }
         }
+        if (this.gameObject.transform.position.y <= -1000)
+        {
+            this.spawnController.SpawnNewEnemy();
+        }
     }
 
     public IEnumerator DestroyEnemy()

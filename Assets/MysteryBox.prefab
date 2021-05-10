@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyToSpawn: {fileID: 2146335272179626553, guid: db18da6ea151e194ba6a5fc99eb0c7b5, type: 3}
+  dirtParticles: {fileID: 336049401772741063, guid: a512b53661e7ccf45a6bf67e9b0086df, type: 3}
+  spawnFront: 0
   vaxAdd: {fileID: 8706938779750365423}
   enemyAdd: {fileID: 8706938779803643253}
 --- !u!114 &8706938779393725951

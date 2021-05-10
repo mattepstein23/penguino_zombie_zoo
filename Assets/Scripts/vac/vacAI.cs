@@ -96,13 +96,17 @@ public class vacAI : MonoBehaviour
         GameObject[] enemyList = GameObject.FindGameObjectsWithTag("Enemy");
         for (int i = 0; i < enemyList.Length; i++)
         {
+            EnemyHealth health = enemyList[i].GetComponent<EnemyHealth>();
             Transform e = enemyList[i].transform;
             float d = Vector3.Distance(transform.position, e.position);
             if (d < range)
             {
                 scoreTracker.addScore(100);
                 Destroy(enemyList[i]);
-                spawnController.AddKill();
+                if (!health.disableWaveEffects)
+                {
+                    spawnController.AddKill();
+                }
                 attacked = true;
             }
         }

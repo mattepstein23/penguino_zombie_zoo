@@ -6,6 +6,7 @@ public class ChestController : MonoBehaviour
 {
 
     [SerializeField] public GameObject enemyToSpawn;
+    [SerializeField] public GameObject dirtParticles;
 
     [SerializeField] public bool spawnFront = false;
 
@@ -88,7 +89,7 @@ public class ChestController : MonoBehaviour
 
     private IEnumerator EnemySpawn()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         enemySpawn = GameObject.Instantiate(enemyToSpawn);
         Vector3 enemyPos = this.gameObject.transform.position;
         enemyPos.y -= 2;
@@ -100,6 +101,8 @@ public class ChestController : MonoBehaviour
         {
             enemyPos.z += 4.5f;
         }
+        StartCoroutine(SpawnDirt(enemyPos));
+        yield return new WaitForSeconds(1);
         enemySpawn.transform.position = enemyPos;
         enemyRb = enemySpawn.GetComponent<Rigidbody>();
         enemyCollider = enemySpawn.GetComponent<BoxCollider>();
@@ -110,6 +113,15 @@ public class ChestController : MonoBehaviour
         enemyAI.trackingEnabled = false;
         spawnController.AddEnemy();
         this.activateSpawn = true;
+    }
+
+    private IEnumerator SpawnDirt(Vector3 pos)
+    {
+        GameObject dirt = GameObject.Instantiate(dirtParticles);
+        pos.y = 0;
+        dirt.transform.position = pos;
+        yield return new WaitForSeconds(4);
+        Destroy(dirt);
     }
 
 }
