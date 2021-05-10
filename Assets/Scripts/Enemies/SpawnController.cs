@@ -30,7 +30,7 @@ public class SpawnController : MonoBehaviour
 
     private int enemyRequirement;
 
-    private bool gameStarted;
+    private bool gameStarted = false;
 
     void Start()
     {
@@ -39,19 +39,20 @@ public class SpawnController : MonoBehaviour
         waveLabel = GameObject.Find("WaveCounter").GetComponent<UnityEngine.UI.Text>();
         winText = GameObject.Find("WinText").GetComponent<UnityEngine.UI.Text>();
         newWave = GameObject.Find("NewWave").GetComponent<UnityEngine.UI.Text>();
+        waveCounter = 0;
+        waveLabel.text = (waveCounter + 1).ToString();
+        enemyRequirement = enemiesPerWave[waveCounter];
     }
 
     private void delayedStart()
     {
-        waveCounter = 0;
-        waveLabel.text = (waveCounter + 1).ToString();
-        enemyRequirement = enemiesPerWave[waveCounter];
         StartCoroutine(SpawnWave());
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(this.currentWaveKills);
         if (!gameStarted)
         {
             if (pauseMenu.getStart())

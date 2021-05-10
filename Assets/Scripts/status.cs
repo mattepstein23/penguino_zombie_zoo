@@ -12,6 +12,14 @@ public class status : MonoBehaviour
     private int _shield;
     private GameObject pauseMenu;
     private bool ended = false;
+    private bool protecting = false;
+    private float shield_timer;
+    [SerializeField]
+    public GameObject shieldBackground;
+
+    private AudioSource audio;
+
+    [SerializeField] public AudioClip hurtSound;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +29,16 @@ public class status : MonoBehaviour
         _shield = 0;
         spawnController = GameObject.Find("SpawnController").GetComponent<SpawnController>();
         pauseMenu = GameObject.Find("Tutorial");
+        shieldBackground.SetActive(false);
+        AudioSource[] sources = this.gameObject.GetComponents<AudioSource>();
+        for (int i = 0; i < sources.Length; i++)
+        {
+            if (sources[i].mute)
+            {
+                audio = sources[i];
+                audio.mute = false;
+            }
+        }
     }
 
     private void Update()
@@ -35,6 +53,18 @@ public class status : MonoBehaviour
                 ended = true;
             }
         }
+        shield_timer += Time.deltaTime;
+        if(shield_timer >= 3)
+        {
+            protecting = false;
+        }
+        else
+        {
+            protecting = true;
+        }
+        shieldBackground.SetActive(protecting);
+        Debug.Log("timer" + shield_timer);
+        Debug.Log("protecting" + protecting);
     }
 
     // Update is called once per frame
@@ -45,14 +75,17 @@ public class status : MonoBehaviour
 
     public void Hurt(float damage)
     {
-        if(_shield <= 0)
+        if(_shield <= 0 && protecting == false)
         {
             _health -= damage;
             Debug.Log("Health:" + _health);
+            audio.clip = hurtSound;
+            audio.Play();
         }
-        else
+        else if( protecting == false)
         {
             _shield--;
+            shield_timer = 0f;
         }
     }
 

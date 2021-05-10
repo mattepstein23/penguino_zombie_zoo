@@ -46,6 +46,7 @@ public class EnemyHealth : MonoBehaviour
         if (this.gameObject.transform.position.y <= -1000)
         {
             this.spawnController.SpawnNewEnemy();
+            Destroy(this.gameObject);
         }
     }
 
