@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI; 
 
 // ----- Low Poly FPS Pack Free Version -----
 public class GrenadeScript : MonoBehaviour {
+	int numberOfGrenades = 5; 
 
 	[Header("Timer")]
 	//Time before the grenade explodes
@@ -48,11 +50,15 @@ public class GrenadeScript : MonoBehaviour {
 
 	private void Start () 
 	{
-		//Launch the projectile forward by adding force to it at start
-		GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * throwForce);
-
-		//Start the explosion timer
-		StartCoroutine (ExplosionTimer ());
+		
+			//Launch the projectile forward by adding force to it at start
+			GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * throwForce);
+			
+			
+			
+			//Start the explosion timer
+			StartCoroutine (ExplosionTimer());
+	
 	}
 
 	private void OnCollisionEnter (Collision collision) 
