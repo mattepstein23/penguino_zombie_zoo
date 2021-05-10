@@ -7,6 +7,8 @@ public class ChestController : MonoBehaviour
 
     [SerializeField] public GameObject enemyToSpawn;
 
+    [SerializeField] public bool spawnFront = false;
+
     private bool alreadyOpened = false; 
     int random;
 
@@ -19,6 +21,11 @@ public class ChestController : MonoBehaviour
     private SpawnController spawnController;
 
     private AutomaticGunScriptLPFP playerController;
+
+    [SerializeField]
+    public GameObject vaxAdd;
+    [SerializeField]
+    public GameObject enemyAdd;
     
 
     // Start is called before the first frame update
@@ -46,42 +53,63 @@ public class ChestController : MonoBehaviour
 
     // Update is called once per frame
     public void Open() {
-        alreadyOpened = true;
-        random = Random.Range(0,2); 
-        this.GetComponent<Animation>().Play("ChestAnim");
-        Debug.Log("I'm Opening"); 
+        if (!alreadyOpened)
+        {
+            this.gameObject.GetComponentInChildren<Exclamation>().Disable();
+            alreadyOpened = true;
+            random = Random.Range(0, 2);
+            this.GetComponent<Animator>().SetTrigger("OpenChest");
+            Debug.Log("I'm Opening");
 
-        if(random == 0){
-            this.playerController.addVac();
-            StartCoroutine(AddVacLabel());
-        }
+            if (random == 0)
+            {
+                StartCoroutine(AddLabel(vaxAdd));
+                this.playerController.addVac();
+            }
 
-        if(random == 1){
-            enemySpawn = GameObject.Instantiate(enemyToSpawn);
-            Vector3 enemyPos = this.gameObject.transform.position;
-            enemyPos.y -= 2;
-            enemyPos.z -= 4.5f;
-            enemySpawn.transform.position = enemyPos;
-            enemyRb = enemySpawn.GetComponent<Rigidbody>();
-            enemyCollider = enemySpawn.GetComponent<BoxCollider>();
-            enemyAI = enemySpawn.GetComponent<MovementAI>();
-            enemyAI.jumpEnabled = false;
-            enemyCollider.enabled = false;
-            enemyRb.useGravity = false;
-            enemyAI.trackingEnabled = false;
-            spawnController.AddEnemy();
-            this.activateSpawn = true;
+            if (random == 1)
+            {
+                StartCoroutine(AddLabel(enemyAdd));
+                StartCoroutine(EnemySpawn());
+            }
+            //if(random == 2){
+            //    Debug.Log("Ability Two activated"); 
+            //}
         }
-        //if(random == 2){
-        //    Debug.Log("Ability Two activated"); 
-        //}
     }
 
-    private IEnumerator AddVacLabel()
+    private IEnumerator AddLabel(GameObject obj)
     {
-        UnityEngine.UI.Text vaxLabel = GameObject.Find("VaxAdd").GetComponent<UnityEngine.UI.Text>();
-        vaxLabel.text = "Vaccination Added";
+        yield return new WaitForSeconds(1);
+        obj.SetActive(true);
         yield return new WaitForSeconds(3);
-        vaxLabel.text = "";
+        obj.SetActive(false);
     }
+
+    private IEnumerator EnemySpawn()
+    {
+        yield return new WaitForSeconds(3);
+        enemySpawn = GameObject.Instantiate(enemyToSpawn);
+        Vector3 enemyPos = this.gameObject.transform.position;
+        enemyPos.y -= 2;
+        if (spawnFront)
+        {
+            enemyPos.z -= 4.5f;
+        }
+        else
+        {
+            enemyPos.z += 4.5f;
+        }
+        enemySpawn.transform.position = enemyPos;
+        enemyRb = enemySpawn.GetComponent<Rigidbody>();
+        enemyCollider = enemySpawn.GetComponent<BoxCollider>();
+        enemyAI = enemySpawn.GetComponent<MovementAI>();
+        enemyAI.jumpEnabled = false;
+        enemyCollider.enabled = false;
+        enemyRb.useGravity = false;
+        enemyAI.trackingEnabled = false;
+        spawnController.AddEnemy();
+        this.activateSpawn = true;
+    }
+
 }

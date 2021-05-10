@@ -1219,7 +1219,7 @@ MonoBehaviour:
   attacked: 0
   attackRange: 1
   attackGap: 555555
-  damage: 1
+  damage: 4
   inRange: 0
 --- !u!195 &7401614948035592668
 NavMeshAgent:
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa8bd28c61c1bf419ecbd5368e729d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 15
+  lifeTime: 60
   remainTime: 0
 --- !u!1 &7401614948035692343
 GameObject:

@@ -8,10 +8,13 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	//Animator component attached to weapon
 	Animator anim;
 
-	private int vaccinations;
+	public int vaccinations;
 	private GameObject player;
 
 	private bool waterPlaying = false;
+
+	[SerializeField]
+	private UnityEngine.UI.Text vaxNum;
 
 	[Header("Gun Camera")]
 	//Main gun camera
@@ -217,9 +220,12 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	
 	private void Update () {
 
+		vaxNum.text = vaccinations.ToString();
+
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			pauseMenu.toggle();
+			pauseMenu.startGame();
 		}
 
 		//Aiming
